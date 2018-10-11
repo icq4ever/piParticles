@@ -64,9 +64,12 @@ void ofApp::setup(){
    // ofDisableAntiAliasing(); //<-- only when speed is really dramatic
 
     
-    txtData.loadImage("text3.png");
+    // txtData.loadImage("text3.png");
+    txtData.load("text3.png");
 
-    unsigned char * pixels = txtData.getPixels();
+    // unsigned char * pixels = txtData.getPixels();
+    unsigned char * pixels = txtData.getPixels().getData();
+    // txtData.get
 
     Particle* particle;
     
